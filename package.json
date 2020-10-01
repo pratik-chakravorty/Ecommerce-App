@@ -4,12 +4,16 @@
   "description": "Ecom App",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server"
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pratik-chakravorty/Ecommerce-App.git"
   },
+  "type": "module",
   "author": "Pratik",
   "license": "ISC",
   "bugs": {
@@ -17,6 +21,12 @@
   },
   "homepage": "https://github.com/pratik-chakravorty/Ecommerce-App#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
   }
 }
