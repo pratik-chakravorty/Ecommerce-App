@@ -1,0 +1,22 @@
+{
+  "name": "ecom_app",
+  "version": "1.0.0",
+  "description": "Ecom App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratik-chakravorty/Ecommerce-App.git"
+  },
+  "author": "Pratik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pratik-chakravorty/Ecommerce-App/issues"
+  },
+  "homepage": "https://github.com/pratik-chakravorty/Ecommerce-App#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
